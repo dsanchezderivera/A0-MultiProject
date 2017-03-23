@@ -106,7 +106,7 @@ PATH(PROJECT_RELATIVE):main.c
       <informativeText>Abstract: This service exposes a control point to allow a peer device to cause the device to immediately alert. Summary: The Immediate Alert service is instantiated as a Primary Service.     There is only one instance of the Immediate Alert service on a device.     There is only one instance of the Alert Level characteristic in an Immediate Alert service.     This alert continues until one of following conditions occurs:     - An implementation specific timeout     - User interaction on this device     - A new alert level is written     - The physical link is disconnected Examples: If the written alert level is "No Alert", no alerting is done on this device. If the written alert level is "Mild Alert", the device alerts. If the written alert level is "High Alert", the device alerts in the strongest possible way. </informativeText>
       <characteristic id="alert_level" name="Alert Level" sourceId="org.bluetooth.characteristic.alert_level" uuid="2a06">
         <informativeText>Abstract: The level of an alert a device is to sound. If this level is changed while the alert is being sounded, the new level should take effect. Summary: The value of the characteristic shall be an unsigned 8 bit integer that has a fixed point exponent of 0.     The Alert Level characteristic defines the level of alert, and is one of the following three values:     - Value 0, meaning "No Alert"     - Value 1, meaning "Mild Alert"     - Value 2, meaning "High Alert" Examples: The value 0x01 is interpreted as "Mild Alert" </informativeText>
-        <value length="1" type="utf-8" variable_length="false"/>
+        <value length="20" type="utf-8" variable_length="false"/>
         <properties write_no_response="true" write_no_response_requirement="optional"/>
       </characteristic>
     </service>
@@ -116,6 +116,19 @@ PATH(PROJECT_RELATIVE):main.c
         <informativeText>Abstract: Silicon Labs OTA Control. </informativeText>
         <value length="1" type="user" variable_length="false"/>
         <properties write="true" write_requirement="optional"/>
+      </characteristic>
+    </service>
+    <service advertise="true" name="CustomService" requirement="mandatory" sourceId="custom.type" type="primary" uuid="89d458a8-4c84-498c-809a-ac3bb713ad54">
+      <informativeText>Custom service</informativeText>
+      <characteristic id="display_string" name="Display String" sourceId="custom.type" uuid="cfbf95a6-f2d6-4c04-a2f7-211fdf6c5bb6">
+        <informativeText>Custom characteristic</informativeText>
+        <value length="20" type="utf-8" variable_length="false"/>
+        <properties write_no_response="true" write_no_response_requirement="optional"/>
+      </characteristic>
+      <characteristic id="device_status_upm" name="Status" sourceId="custom.type" uuid="0d226afe-18c2-4cdc-ba73-faa36651cbae">
+        <informativeText>Custom characteristic</informativeText>
+        <value length="6" type="utf-8" variable_length="false">Ready</value>
+        <properties const="true" const_requirement="optional" read="true" read_requirement="optional"/>
       </characteristic>
     </service>
   </gatt>

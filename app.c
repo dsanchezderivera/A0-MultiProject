@@ -140,11 +140,23 @@ void appHandleEvents(struct gecko_cmd_packet *evt)
 
     /* Value of attribute changed from the local database by remote GATT client */
     case gecko_evt_gatt_server_attribute_value_id:
-		/* Check if changed characteristic is the Immediate Alert level */
+    	switch (evt->data.evt_gatt_server_attribute_value.attribute) {
+    	/* Check if changed characteristic is the Immediate Alert level */
+    	case gattdb_alert_level:
+    		iaImmediateAlertWrite(&evt->data.evt_gatt_server_attribute_value.value);
+    		break;
+    	/* Check if changed characteristic is the Custom Service String */
+    	case gattdb_display_string:
+    	    appUiWriteString("String");
+    	    break;
+    	default:
+    		break;
+    	}
+		/* Check if changed characteristic is the Immediate Alert level
         if ( gattdb_alert_level == evt->data.evt_gatt_server_attribute_value.attribute) {
-		  /* Write the Immediate Alert level value */
+		   Write the Immediate Alert level value
           iaImmediateAlertWrite(&evt->data.evt_gatt_server_attribute_value.value);
-        }
+        }*/
       break;
 
     /* Indicates the changed value of CCC or received characteristic confirmation */

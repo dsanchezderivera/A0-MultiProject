@@ -19,7 +19,5 @@ extern const struct bg_gattdb_def bg_gattdb_data;
 #define gattdb_MeasInt                         23
 #define gattdb_alert_level                     26
 #define gattdb_ota_control                     29
-#define gattdb_display_string                  32
-#define gattdb_device_status_upm               34
 
 #endif

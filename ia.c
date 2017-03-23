@@ -17,6 +17,7 @@
 
 /* Own header */
 #include "ia.h"
+#include <stdio.h>
 
 /***********************************************************************************************//**
  * @addtogroup Services
@@ -61,6 +62,14 @@
 
 void iaImmediateAlertWrite(uint8array *writeValue)
 {
+//	uint8 templen = writeValue->len;
+//	//uint8 tempdata[writeValue->len]; memcpy(tempdata,writeValue->data,writeValue->len);
+//	//char stringTemp[20];
+//	//strncpy(stringTemp, (char*)writeValue->data, 20);
+//	//stringTemp[writeValue->len] = '\0';
+//	//snprintf(stringTemp, sizeof("hola+nnnn"), "hola+%d", writeValue->data);
+//	appUiWriteString("hola");
+
   switch (writeValue->data[0]) {
     default:
     case ALERT_NO:

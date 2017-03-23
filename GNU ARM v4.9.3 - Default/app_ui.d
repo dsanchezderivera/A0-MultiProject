@@ -7,7 +7,7 @@ app_ui.o: ../app_ui.c ../boards.h ../ble-configuration.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\protocol\bluetooth_2.3\ble_stack\inc\common\bg_types.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\protocol\bluetooth_2.3\ble_stack\inc\common\bg_errorcodes.h \
  ../infrastructure.h \
- C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/initDevice.h \
+ C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/initDevice.h \
  ../graphics.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_gpio.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\device\siliconlabs\efr32bg1b\include\em_device.h \
@@ -78,7 +78,7 @@ c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\protocol\
 
 ../infrastructure.h:
 
-C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/initDevice.h:
+C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/initDevice.h:
 
 ../graphics.h:
 

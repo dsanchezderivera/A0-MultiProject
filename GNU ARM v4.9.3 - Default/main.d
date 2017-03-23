@@ -62,7 +62,7 @@ main.o: ../main.c ../boards.h ../ble-configuration.h ../board_features.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\hardware\kit\common\bsp\bsp_bcp.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\radio\rail_lib\chip\efr32\rf\common\cortex\pti.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_gpio.h \
- C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/InitDevice.h
+ C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/InitDevice.h
 
 ../boards.h:
 
@@ -196,4 +196,4 @@ c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\
 
 c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_gpio.h:
 
-C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/InitDevice.h:
+C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/InitDevice.h:

@@ -1,5 +1,5 @@
 src/InitDevice.o: ../src/InitDevice.c \
- C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/InitDevice.h \
+ C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/InitDevice.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_system.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\device\siliconlabs\efr32bg1b\include\em_device.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\device\siliconlabs\efr32bg1b\include\efr32bg1b232f256gm48.h \
@@ -61,7 +61,7 @@ src/InitDevice.o: ../src/InitDevice.c \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_prs.h \
  c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_rtcc.h
 
-C:\Users\Diego\SimplicityStudio\v4_workspace\soc-smartPhone2\inc/InitDevice.h:
+C:\Users\Diego\SimplicityStudio\v4_workspace\A0-MultiProject\inc/InitDevice.h:
 
 c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.0\platform\emlib\inc\em_system.h:
 

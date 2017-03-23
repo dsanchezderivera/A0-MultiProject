@@ -30,8 +30,5 @@
 
 # Debug files
 *.dSYM/
-<<<<<<< HEAD
 *.su
-=======
-*.su
->>>>>>> 84de75f949bf664000e8c0eaa12da0d552c992b9
+
